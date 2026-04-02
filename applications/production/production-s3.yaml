@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: production
+---
+apiVersion: platform.tekanaid.com/v1alpha1
+kind: BucketClaim
+metadata:
+  name: prod-storage
+  namespace: production
+spec:
+  bucketName: "myapp-prod-storage"
+  environment: "prod"
+  tier: "premium"
+  writeConnectionSecretsToNamespace: "production"
+  tags:
+    CostCenter: "production"
+    Project: "platform-v1"
+    Owner: "platform-team"
