@@ -15,5 +15,5 @@ spec:
   writeConnectionSecretsToNamespace: "development"
   tags:
     CostCenter: "engineering"
-    Project: "platform-v1"
-    Owner: "devops-team"
+    Project: "platform-v2"
+    Owner: "platform-team"
