@@ -11,7 +11,7 @@ metadata:
 spec:
   bucketName: "myapp-dev-storage"
   environment: "dev"
-  tier: "basic"
+  tier: "standard"
   writeConnectionSecretsToNamespace: "development"
   tags:
     CostCenter: "engineering"
